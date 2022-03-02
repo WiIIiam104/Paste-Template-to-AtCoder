@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         paste template
 // @namespace    http://atcoder.jp/
-// @version      0.2.4
+// @version      0.2.5
 // @description  paste your template to atcoder
 // @author       wiiiiam104
 // @match        https://atcoder.jp/contests/*/tasks/*
 // @match        https://atcoder.jp/contests/*/custom_test*
-// @grant        unsafeWindow
 // ==/UserScript==
 
 
