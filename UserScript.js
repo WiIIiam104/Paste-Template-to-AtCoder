@@ -11,10 +11,10 @@
 
 (function script() {
   // yourCode(string) will be saved by running below (recommend using String.raw)
-  // localStorage.template=(yourCode);
+  // localStorage.ubuneci5$template=(yourCode);
 
   const f=(async () => {
-    const data = localStorage.template;
+    const data = localStorage.ubuneci5$template;
     if (data===undefined)return alert("no saved code found");
     if ($('.btn-toggle-editor').click().click(),!document.querySelector('span.cm-variable') || confirm("Your current code will be replaced. Are you sure?")) {
       $('.plain-textarea').val(data);
