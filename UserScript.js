@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         paste template
 // @namespace    http://atcoder.jp/
-// @version      0.3.0
+// @version      0.3.1
 // @description  paste your template to atcoder
 // @author       wiiiiam104
 // @match        https://atcoder.jp/contests/*/tasks/*
@@ -10,8 +10,6 @@
 
 
 (function script() {
-  // yourCode(string) will be saved by running below (recommend using String.raw)
-  // localStorage.ubuneci5$template=(yourCode);
 
   const f=(async ()=>{
     const data=localStorage.ubuneci5$template;
@@ -32,7 +30,7 @@
 
   const h=()=>{
     let span=$("<span>", {id:"ubuneci5$span"});
-    $("<p>").html("input your template").appendTo(span);
+    $("<p>").html("paste your template below").appendTo(span);
     $("<textarea>", {id:"ubuneci5$textarea"}).appendTo(span);
     $("<a>").click(g).html("OK").appendTo(span);
     span.appendTo(".col-sm-3.editor-buttons");
