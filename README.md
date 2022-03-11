@@ -1,6 +1,6 @@
 # Paste-Template-to-AtCoder
 AtCoderのコンテストページにテンプレートコードを貼り付けるためのUserScriptです.<br>
-This is a repository of UserScript for pasting your template into AtCoder.<br>
+This is a repository of UserScript for pasting your template into AtCoder.<br><br>
 
-ご使用前に歯車マークを押してあなたのテンプレートを貼り付けてください．<br>
-Click the gear mark and, paste your template to the textbox.
+歯車マークを押すことで貼り付けるコードを設定できます．<br>
+Click the gear mark and you can set a code which you want to paste.
