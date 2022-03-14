@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         paste template
 // @namespace    http://atcoder.jp/
-// @version      0.3.1
+// @version      0.3.2
 // @description  paste your template to atcoder
 // @author       wiiiiam104
 // @match        https://atcoder.jp/contests/*/tasks/*
@@ -13,8 +13,8 @@
 
   const f=(async ()=>{
     const data=localStorage.ubuneci5$template;
-    if (data===undefined)return alert("no saved code found");
-    if ($(".btn-toggle-editor").click().click(), !document.querySelector("span.cm-variable") || confirm("Your current code will be replaced. Are you sure?")) {
+    if(data===undefined)return alert("no saved code found");
+    if($(".btn-toggle-editor").click().click(), !document.querySelector("span.cm-variable") || confirm("Your current code will be replaced. Are you sure?")) {
       $(".plain-textarea").val(data);
       $(".editor").data("editor").doc.setValue(data);
     }
@@ -22,7 +22,10 @@
 
   const g=()=>{
     let input=document.getElementById("ubuneci5$textarea").value;
-    if(input==="" || input===undefined)return;
+    if(input==="" || input===undefined){
+      $("<p>").html("updating your template was canceled").appendTo(".col-sm-3.editor-buttons");
+      return;
+    }
     localStorage.ubuneci5$template=input;
     document.getElementById("ubuneci5$span").remove();
     $("<p>").html("your template was saved").appendTo(".col-sm-3.editor-buttons");
