@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         paste template
-// @namespace    http://atcoder.jp/
-// @version      0.3.2
+// @namespace    http://github.com/wiiiiam104
+// @version      0.3.3
 // @description  paste your template to atcoder
 // @author       wiiiiam104
 // @match        https://atcoder.jp/contests/*/tasks/*
